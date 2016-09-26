@@ -10,6 +10,16 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            Element<int> a = new Element<int>(4);
+            Element<int> b = new Element<int>(5);
+            Element<int> c = new Element<int>(6);
+            List<int> List = new List<int>();
+            List.addfirst(a);
+            List.addfirst(b); 
+            List.addfirst(c);
+            List.PrintList();
+            Console.ReadKey();
+
         }
     }
 }

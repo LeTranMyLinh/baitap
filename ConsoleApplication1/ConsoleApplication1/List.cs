@@ -16,11 +16,24 @@ namespace ConsoleApplication1
             set { head = value; }
         }
         public List()
-        { }
+        {
+            this.head = null;
+        }
         public void addfirst (Element<L> e)
         {
             e.Next = head;
             this.head = e;
+        }
+ 
+        //in tat ca phan tu
+        public void PrintList()
+        {
+            Element<L> point = head;
+            while(point != null)
+            {
+                Console.WriteLine(point.Data);
+                point = point.Next;
+            }
         }
     }
 }
